@@ -1,0 +1,308 @@
+/************************ Global ************************************/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+    }/****************** var *******************/:root
+    {
+        --main-clr: #232323;
+        --rose-clr: #fdefe1;
+        --ruby-clr: #ed1b6f;
+        --grey-clr: #f9f9f9;
+    }
+    /******************************** Small & Midium Devices ******************************/
+    @media(max-width:767px) {
+        /*********************** Start Header ********************/
+        .Top {
+            margin-bottom: 3rem;
+        }
+        .Top__logo {
+            width: 100px;
+            order: 1;
+        }
+        .Top__list {
+            display: none;
+        }
+        .Top__menu {
+            display: inline-block;
+            order: 2;
+            width: 60%;
+            text-align: right;
+        }
+        .Top__clientside {
+            order: 4;
+        }
+        .Top__info {
+            border: none;
+        }
+        .Top__search {
+            order: 3;
+        }
+        /***********************   End Header  ********************/
+        /*********************** Start Main ********************/
+        /***************** Start Slider Section ***************/
+        .Slider {
+            background-position-x: -12rem;
+            background-size: cover;
+            height: 70vh;
+            width: 100%;
+            background-color: coral;
+            margin-bottom: 2rem;
+        }
+        .Slider__content {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 50rem;
+            z-index: 2;
+        }
+        .Slider__animat {
+            width: 8rem;
+        }
+        .Slider__title,
+        .title,
+        .Packs__prg,
+        .Spa__title,
+        .Browse__title {
+            font-size: 4rem;
+            margin: 2rem auto 1rem;
+            letter-spacing: 0.3rem;
+        }
+        .Slider__subtitle,
+        .Slider__txt,
+        .Slider__prg,
+        .subtitle,
+        .Products__name,
+        .Packs__subTitle,
+        .Spa__subtitle,
+        .Browse__subtitle {
+            font-size: 1.5rem;
+        }
+        /***************** End Slider Section ***************/
+        /***************** Start Products Section ***************/
+        .Products__samples {
+            display: block;
+        }
+        /***************** End Products Section ***************/
+        /***************** Start Packs Section ***************/
+        .Packs__flex {
+            background-image: url("../images/noise-parallax-bgimage.jpg");
+            display: block;
+            align-items: center;
+            margin: 5rem 0 0;
+        }
+
+        .Packs__img,
+        .Packs__content {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .Packs__prg {
+            left: 0;
+        }
+        /***************** End Packs Section ***************/
+        /***************** Start Catalog Section ***************/
+        .Catalog__flex {
+            display: block;
+            margin: 0 auto;
+        }
+        .Catalog__content{
+            width: 100%;
+            margin-bottom: 18rem;
+        }
+        .Catalog__photo {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        .Catalog__prg2 {
+            margin-top: 4rem;
+        }
+        /***************** End Catalg Section ***************/
+        /***************** Start Products2 Section ***************/
+        .Products2__samples {
+            display: block;
+        }
+        .Products2__product {
+            width: 80%;
+            margin: 2rem auto;
+        }
+        /***************** End Products2 Section ***************/
+        /***************** Start Browse Section ***************/
+        .Browse {
+            background-size: cover;
+        }
+        .Browse__content {
+            width: 100%;
+            padding: 8rem 0;
+            text-align: center;
+        }
+        /***************** End Browse Section ***************/
+        /***************** Start Updates Section ***************/
+        .Updates__flex {
+            display: block;
+        }
+        .Updates__model {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        /***************** End Updates Section ***************/
+        /******************* Start Footer *********************/
+        .footer {
+            margin-top: 40rem;
+            padding-top: 40rem;
+        }
+        .footer__Top {
+            text-align: center;
+        }
+        .footer__shipping {
+            width: 100%;
+            display: block;
+            margin: 1rem auto;
+        }
+        .footer__flex {
+            padding-left: 5rem;
+        }
+        .footer__column {
+            width: 50%;
+        }
+        .fixed {
+            display: none;
+        };
+        /******************* End Footer *********************/
+    }
+
+    /******************************** Large Devices ******************************/
+    @media(min-width:768px) and (max-width:1033px){
+        /*********************** Start Header ********************/
+        .Top {
+            margin-bottom: 3rem;
+        }
+        .Top__logo {
+            width: 100px;
+            order: 1;
+        }
+        .Top__list {
+            display: none;
+        }
+        .Top__menu {
+            display: inline-block;
+            order: 2;
+            width: 80%;
+            text-align: right;
+        }
+        .Top__clientside {
+            order: 4;
+        }
+        .Top__info {
+            border: none;
+        }
+        .Top__search {
+            order: 3;
+        }
+        /***********************   End Header  ********************/
+        /*********************** Start Main ********************/
+        /***************** Start Slider Section ***************/
+        .Slider {
+            background-position-x: -28rem;
+            background-size: cover;
+            width: 100%;
+            background-color: coral;
+            margin-bottom: 2rem;
+        }
+        .Slider__content {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 50rem;
+            z-index: 2;
+        }
+        .Slider__animat {
+            width: 8rem;
+        }
+        .Slider__title,
+        .title,
+        .Packs__prg,
+        .Spa__title,
+        .Browse__title {
+            font-size: 6rem;
+            margin: 2rem auto 1rem;
+            letter-spacing: 0.3rem;
+        }
+        .Slider__subtitle,
+        .Slider__txt,
+        .Slider__prg,
+        .subtitle,
+        .Products__name,
+        .Packs__subTitle,
+        .Spa__subtitle,
+        .Browse__subtitle {
+            font-size: 2rem;
+        }
+        /***************** End Slider Section ***************/
+        /***************** Start Catalog Section ***************/
+        .Catalog__flex {
+            display: block;
+            margin: 0 auto;
+        }
+        .Catalog__content{
+            width: 100%;
+            margin-bottom: 18rem;
+        }
+        .Catalog__photo {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        .Catalog__prg2 {
+            margin-top: 4rem;
+        }
+        /***************** End Catalg Section ***************/
+        /***************** Start Products2 Section ***************/
+        .Products2__samples {
+        }
+        .Products2__product {
+            width: 45%;
+            margin: 2rem auto;
+        }
+        /***************** End Products2 Section ***************/
+        /***************** Start Browse Section ***************/
+        .Browse__content {
+            width: 100%;
+            padding: 6rem 0;
+            text-align: center;
+        }
+        /***************** End Browse Section ***************/
+        /***************** Start Updates Section ***************/
+        .Updates__flex {
+            display: block;
+        }
+        .Updates__model {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        /***************** End Updates Section ***************/
+        /******************* Start Footer *********************/
+        .footer__Top {
+            justify-content: center
+        }
+        .footer__flex {
+            padding-left: 5rem;
+        }
+        .footer__shipping {
+            width:35%;
+        }
+        .footer__column {
+            width: 50%;
+        }
+        .fixed {
+            display: none;
+        };
+        /******************* End Footer *********************/
+    }
