@@ -41,7 +41,7 @@ img {
   width: 100%;
   height: 100vh;
   background-color: var(--rose-clr);
-  animation: gos 5s;
+  animation: go 5s;
   position: fixed;
   top: 0;
   left: 0;
@@ -351,14 +351,13 @@ img {
   position: absolute;
   width: auto;
   height: auto;
-  opacity: .7;
+  opacity: 0.7;
 }
 .Slider__anim1 {
   animation: moveimg1 6s forwards infinite alternate-reverse;
   animation-delay: 2.5s;
-  transition: .5s;
+  transition: 0.5s;
   visibility: hidden;
-  
 }
 @keyframes moveimg1 {
   0% {
@@ -461,8 +460,8 @@ img {
   margin: 0 1rem;
   text-align: center;
 }
-.Products__bgtranslate {    /* animation mazala chwiya m3ankcha */
-  width: 26rem; 
+.Products__bgtranslate {
+  width: 26rem;
   height: 26rem;
   background-color: #fff0f4;
   position: absolute;
@@ -470,7 +469,7 @@ img {
   left: calc(50% - 13rem);
   border-radius: 50%;
   z-index: -1;
-  transition: .2s;
+  transition: 0.2s;
 }
 .bgleft {
   background-color: #e5fff0;
@@ -479,12 +478,18 @@ img {
   background-color: #fff0e3;
 }
 .Products__Product:hover .Products__bgtranslate {
-  top:28%;
-  animation: bg .3s forwards .3s ease-in-out;
+  top: 28%;
+  animation: bg 0.3s forwards 0.3s ease-in-out;
 }
 @keyframes bg {
-  0% {border-radius: 50%; transform: scale(1, 1);}
-  100% {border-radius: initial; transform: scale(1.2, 1.8);}
+  0% {
+    border-radius: 50%;
+    transform: scale(1, 1);
+  }
+  100% {
+    border-radius: initial;
+    transform: scale(1.2, 1.8);
+  }
 }
 .Products__img {
   transition: 0.3s 0.3s;
@@ -812,8 +817,8 @@ img {
   width: 31%;
   text-align: center;
 }
-.Updates__hidelink{ 
-  transition: .5s;
+.Updates__hidelink {
+  transition: 0.5s;
 }
 .Updates__model:hover .Updates__hidelink {
   color: var(--ruby-clr);
@@ -861,7 +866,7 @@ img {
 }
 .bullet2::after {
   position: absolute;
-  content: 'read more';
+  content: "read more";
   white-space: nowrap;
   left: 60%;
   transform: translateX(-60%);
@@ -965,7 +970,6 @@ img {
 .footer__link {
   transition: 0.5s;
   cursor: pointer;
-
 }
 .footer__link:hover {
   color: var(--ruby-clr);
@@ -1002,7 +1006,7 @@ img {
   height: 100%;
   top: 60%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 .title {
   font-size: 4.5rem;
